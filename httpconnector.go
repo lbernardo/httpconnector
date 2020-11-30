@@ -11,7 +11,9 @@ type HttpConnector interface {
 }
 
 func AddHeaders(req *http.Request, headers map[string]string) {
-	for n, v := range headers {
-		req.Header.Add(n, v)
+	if headers != nil {
+		for n, v := range headers {
+			req.Header.Add(n, v)
+		}
 	}
 }

@@ -4,6 +4,10 @@
 
 Use httpconnector for creating your dependencies injections  and mocks for tests
 
+```
+go get github.com/lbernardo/httpconnector
+```
+
 ## Use
 ```go
 package services
